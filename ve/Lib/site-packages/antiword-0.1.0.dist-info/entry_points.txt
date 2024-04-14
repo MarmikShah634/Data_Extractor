@@ -1,0 +1,3 @@
+[console_scripts]
+antiword=antiword:main
+

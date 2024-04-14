@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <h2>Upload Files</h2> <br>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="id_name">Name:</label> <br>
+        <input type="text" id="id_name" name="name"><br>
+        <label for="id_file">File:</label>
+        <input type="file" id="id_file" name="file" multiple><br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
